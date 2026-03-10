@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +60,88 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|138110000|101412000|e440a4d7-cd86-402f-b415-6e1aa60b3bcb|7c02d923-3907-4736-bd4a-a0f4eddaf084",
+          ""
+        ],
+        [
+          "copper_edge_clearance|138110000|103952000|e440a4d7-cd86-402f-b415-6e1aa60b3bcb|4335ef45-5e58-4c65-aaff-b7d8f78aeea0",
+          ""
+        ],
+        [
+          "copper_edge_clearance|138110000|106492000|e440a4d7-cd86-402f-b415-6e1aa60b3bcb|e12eaab5-7b39-4fe4-b9a7-10f2888c4cc6",
+          ""
+        ],
+        [
+          "copper_edge_clearance|138110000|109032000|e440a4d7-cd86-402f-b415-6e1aa60b3bcb|e6035c89-f9c0-46ac-bf5d-137c4f2811f8",
+          ""
+        ],
+        [
+          "copper_edge_clearance|138110000|111572000|e440a4d7-cd86-402f-b415-6e1aa60b3bcb|a6761c78-e2fe-4cc9-84fb-330e100a98f8",
+          ""
+        ],
+        [
+          "copper_edge_clearance|138110000|114112000|e440a4d7-cd86-402f-b415-6e1aa60b3bcb|e3cc4d9c-2366-4f7a-8802-81f9194c09b5",
+          ""
+        ],
+        [
+          "copper_edge_clearance|138110000|98872000|e440a4d7-cd86-402f-b415-6e1aa60b3bcb|883f6203-33f1-401e-b842-67a108d1e526",
+          ""
+        ],
+        [
+          "copper_edge_clearance|146880000|96000000|77e15f8f-1bd8-45f2-97bc-270dc317f4be|3290c8b6-ecb7-4b26-bfb6-d1125c0699d4",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155890000|101412000|67f02a1d-d4fd-475b-ba08-fa62d2f5a040|e76c068f-7abc-45e1-977c-e6efed15919b",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155890000|103952000|67f02a1d-d4fd-475b-ba08-fa62d2f5a040|ff5aefd0-725a-4ca8-807c-f1c8407bdb3c",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155890000|106492000|67f02a1d-d4fd-475b-ba08-fa62d2f5a040|c4214888-e4d1-4079-9c7e-886ff173245c",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155890000|109032000|67f02a1d-d4fd-475b-ba08-fa62d2f5a040|1adb2515-827e-4fb1-a002-36b4afe57def",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155890000|111572000|67f02a1d-d4fd-475b-ba08-fa62d2f5a040|7c6ba0c6-05f3-452a-8868-ae7b89a46efc",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155890000|114112000|67f02a1d-d4fd-475b-ba08-fa62d2f5a040|0d26b320-6df3-41b3-baea-1a94bd58e335",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155890000|98032000|0b14e385-e5b9-4a3f-8808-d43effb8dded|d2268212-b200-47e5-8180-02f0cd12506f",
+          ""
+        ],
+        [
+          "courtyards_overlap|143200490|109643144|9befef64-9d25-4e1d-ac5e-8d0686bbba56|ccd2bf2f-c68e-4232-8cef-9dcb20c7d60b",
+          ""
+        ],
+        [
+          "courtyards_overlap|143230490|112364240|470c2bf1-42db-4163-8342-bac99f5156b6|b33b3f6a-4087-41ed-8670-51e4728e3e7b",
+          ""
+        ],
+        [
+          "courtyards_overlap|143905062|111729298|470c2bf1-42db-4163-8342-bac99f5156b6|cf5651f1-62c9-4dc6-b3aa-c36d8061aa3c",
+          ""
+        ],
+        [
+          "courtyards_overlap|145272339|110339932|d78f89ad-028e-494d-957b-1db342a8a723|e77faa9e-5eee-4631-a794-0b2d66a7bda0",
+          ""
+        ],
+        [
+          "courtyards_overlap|150515399|114462143|93c03468-fd59-4abc-b8a0-1ea8efbabfe8|d063583a-0d27-4b56-8bdb-7d92939a1afa",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -77,6 +160,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -94,6 +178,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -113,9 +198,11 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -135,7 +222,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
@@ -187,7 +274,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.25,
+        0.35,
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -243,6 +333,15 @@
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -433,11 +532,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -460,6 +562,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -480,7 +583,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -492,16 +595,95 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.127,
+        "name": "RF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 194, 0)",
+        "tuning_profile": "RF"
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/433MHz": [
+        "RF"
+      ],
+      "/433MHz_RX": [
+        "RF"
+      ],
+      "/433MHz_TX": [
+        "RF"
+      ],
+      "/915MHz": [
+        "RF"
+      ],
+      "/915MHz_RX": [
+        "RF"
+      ],
+      "/915MHz_TX": [
+        "RF"
+      ],
+      "Net-(C10-Pad1)": [
+        "RF"
+      ],
+      "Net-(C11-Pad2)": [
+        "RF"
+      ],
+      "Net-(C12-Pad2)": [
+        "RF"
+      ],
+      "Net-(C17-Pad1)": [
+        "RF"
+      ],
+      "Net-(C18-Pad2)": [
+        "RF"
+      ],
+      "Net-(C30-Pad2)": [
+        "RF"
+      ],
+      "Net-(C31-Pad2)": [
+        "RF"
+      ],
+      "Net-(C36-Pad1)": [
+        "RF"
+      ],
+      "Net-(C36-Pad2)": [
+        "RF"
+      ],
+      "Net-(C9-Pad2)": [
+        "RF"
+      ],
+      "Net-(J3-In)": [
+        "RF"
+      ],
+      "Net-(J4-In)": [
+        "RF"
+      ],
+      "Net-(U1-PA_BOOST)": [
+        "RF"
+      ],
+      "Net-(U1-RFI_HF)": [
+        "RF"
+      ],
+      "Net-(U1-RFI_LF)": [
+        "RF"
+      ],
+      "Net-(U1-RFO_LF)": [
+        "RF"
+      ],
+      "Net-(U1-VR_PA)": [
+        "RF"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -520,6 +702,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -531,7 +717,198 @@
       "ref_range_delimiter": "",
       "string_delimiter": "\""
     },
-    "bom_presets": [],
+    "bom_presets": [
+      {
+        "exclude_dnp": false,
+        "fields_ordered": [
+          {
+            "group_by": true,
+            "label": "Comment",
+            "name": "Value",
+            "show": true
+          },
+          {
+            "group_by": true,
+            "label": "Designator",
+            "name": "Reference",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Qty",
+            "name": "${QUANTITY}",
+            "show": false
+          },
+          {
+            "group_by": true,
+            "label": "MPN",
+            "name": "MPN",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Manufacturer",
+            "name": "Manufacturer",
+            "show": false
+          },
+          {
+            "group_by": true,
+            "label": "Footprint",
+            "name": "Footprint",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Description",
+            "name": "Description",
+            "show": false
+          },
+          {
+            "group_by": true,
+            "label": "DNP",
+            "name": "${DNP}",
+            "show": false
+          },
+          {
+            "group_by": true,
+            "label": "Exclude from BOM",
+            "name": "${EXCLUDE_FROM_BOM}",
+            "show": false
+          },
+          {
+            "group_by": true,
+            "label": "Exclude from Board",
+            "name": "${EXCLUDE_FROM_BOARD}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Datasheet",
+            "name": "Datasheet",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "#",
+            "name": "${ITEM_NUMBER}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Customer Note",
+            "name": "Customer Note",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "LCSC",
+            "name": "LCSC",
+            "show": true
+          }
+        ],
+        "filter_string": "",
+        "group_symbols": true,
+        "include_excluded_from_bom": true,
+        "name": "JLCPCB",
+        "sort_asc": true,
+        "sort_field": "Value"
+      },
+      {
+        "exclude_dnp": false,
+        "fields_ordered": [
+          {
+            "group_by": true,
+            "label": "Designator",
+            "name": "Reference",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Quantity",
+            "name": "${QUANTITY}",
+            "show": true
+          },
+          {
+            "group_by": true,
+            "label": "Manufacturer Part Number",
+            "name": "MPN",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Manufacturer",
+            "name": "Manufacturer",
+            "show": true
+          },
+          {
+            "group_by": true,
+            "label": "Footprint",
+            "name": "Footprint",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Description",
+            "name": "Description",
+            "show": true
+          },
+          {
+            "group_by": true,
+            "label": "Value",
+            "name": "Value",
+            "show": false
+          },
+          {
+            "group_by": true,
+            "label": "Procurement Type",
+            "name": "${DNP}",
+            "show": true
+          },
+          {
+            "group_by": true,
+            "label": "Exclude from BOM",
+            "name": "${EXCLUDE_FROM_BOM}",
+            "show": false
+          },
+          {
+            "group_by": true,
+            "label": "Exclude from Board",
+            "name": "${EXCLUDE_FROM_BOARD}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Datasheet",
+            "name": "Datasheet",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "#",
+            "name": "${ITEM_NUMBER}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Customer Note",
+            "name": "Customer Note",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "LCSC",
+            "name": "LCSC",
+            "show": false
+          }
+        ],
+        "filter_string": "",
+        "group_symbols": true,
+        "include_excluded_from_bom": true,
+        "name": "NextPCB",
+        "sort_asc": true,
+        "sort_field": "Reference"
+      }
+    ],
     "bom_settings": {
       "exclude_dnp": false,
       "fields_ordered": [
@@ -570,15 +947,28 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -586,6 +976,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -609,6 +1000,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -617,13 +1009,47 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "XIAO-SX1276.kicad_sch",
+        "name": "XIAO-SX1276",
+        "uuid": "da985398-292d-4d7a-88da-1bbb7aaf1e6b"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
       "da985398-292d-4d7a-88da-1bbb7aaf1e6b",
-      "Root"
+      "XIAO-SX1276"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": [
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5776900,
+            "diff_pair_gap": 0,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 172374
+          }
+        ],
+        "profile_name": "RF",
+        "target_impedance": 50.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 0
+      }
+    ]
+  }
 }
